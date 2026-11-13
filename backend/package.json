@@ -1,0 +1,23 @@
+{
+  "name": "symsys-games-backend",
+  "main": "server.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node --test",
+    "start": "node server.js"
+  },
+  "private": true,
+  "type": "commonjs",
+  "dependencies": {
+    "@google-cloud/firestore": "^7.11.6",
+    "@google/genai": "^1.52.0",
+    "express": "^4.22.3",
+    "google-auth-library": "^9.15.1",
+    "socket.io": "^4.8.4"
+  },
+  "devDependencies": {
+    "socket.io-client": "^4.8.4"
+  }
+}
