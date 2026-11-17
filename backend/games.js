@@ -4,7 +4,7 @@
 // The text here is the single source for what students see on their phones
 // and for the prompts Gemini gets.
 
-const GAME_ORDER = ['pd', 'ultimatum', 'dictator', 'coord'];
+const GAME_ORDER = ['coord', 'pd', 'ultimatum', 'dictator']; // ultimatum must precede dictator (the dictator chart compares the two)
 const PIE = 10;
 const BOT = 'bot';
 

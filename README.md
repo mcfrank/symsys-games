@@ -2,7 +2,7 @@
 
 *Built with Claude Opus 5.5.*
 
-A live, paired game-theory demo for SYMSYS 1 ("Minds and Machines", Stanford). Students join from a QR code on their phones, get an anonymous pseudonym, and play four one-shot games with a new random partner each time. The instructor's dashboard keeps class results hidden until Reveal, then shows them next to the Nash prediction, published reference values, and the choices of two Gemini models.
+A live, paired game-theory demo for SYMSYS 1 ("Minds and Machines", Stanford). Students join from a QR code on their phones, get an anonymous pseudonym, and play four one-shot games, in the order below, with a new random partner each time. The instructor's dashboard keeps class results hidden until Reveal, then shows them next to the Nash prediction, published reference values, and the choices of two Gemini models.
 
 Live at https://symsys-games-246740721864.us-west2.run.app (dashboard at `/dashboard`).
 
@@ -10,10 +10,10 @@ Live at https://symsys-games-246740721864.us-west2.run.app (dashboard at `/dashb
 
 | Game | Decision | Payoffs | Nash |
 |---|---|---|---|
+| Where do you meet? (coordination) | pick one of 7 campus spots, shown in random order on each phone | +5 each if matched, else 0 | any match (no unique equilibrium) |
 | Clean up or pollute? (prisoner's dilemma) | both choose at once | clean/clean −2/−2, clean/pollute −10/0, pollute/clean 0/−10, pollute/pollute −8/−8 | both pollute |
 | Ultimatum | proposer offers 0–10; responder first states the lowest offer they'd accept, then accepts or rejects the real offer | accept: (10 − offer, offer); reject: (0, 0) | offer 1, accept any positive offer |
 | Dictator | everyone gives 0–10 to a random classmate (a random cycle, so everyone gives once and receives once) | (10 − gift, gift) | give 0 |
-| Where do you meet? (coordination) | pick one of 7 campus spots, shown in random order on each phone | +5 each if matched, else 0 | any match (no unique equilibrium) |
 
 Payoffs are tested against these tables in `backend/test/games.test.js`.
 
